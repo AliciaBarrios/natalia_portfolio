@@ -82,8 +82,7 @@ nav ul li a{
     font-size: calc((1.5 - 1) * 1.2vw + 1rem);
 }
 .main_section{
-    max-width: 100%;
-    padding: 0 15%;
+    max-width: 70%;
     box-sizing: border-box;
     margin: 150px auto 0;
 }
@@ -117,6 +116,7 @@ span{
 }
 footer{
     width: 100%;
+    height: auto;
     background-color: #ece9ef;
     padding-top: 3.3vmax;
     padding-bottom: 3.3vmax;
@@ -136,4 +136,43 @@ footer img{
 footer a{
     font-weight: lighter;
     font-size: 25px;
+}
+
+@media screen and (max-width: 768px){
+    nav{
+        display: none;
+    }
+    nav ul li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .presentation_section{
+        flex-direction: column;
+    }
+    .presentation_section p{
+        max-width: 100%;
+        text-align: center;
+    }
+    .main_section{
+        max-width: 100%;
+    }
+    .main_section article{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin:0;
+        padding: 0 5%;
+    }
+    .main_section article h2{
+        max-width: 100%;
+        margin-bottom: 5%;
+    }
+    .main_section article aside{
+        max-width: 100%;
+        margin-bottom: 5%;
+    }
+    footer{
+        flex-direction: column;
+    }
 }
