@@ -19,16 +19,20 @@ body{
     text-underline-offset: 5px;
 }
 header{
-    padding: 30px 45px;
+    padding: 1.5% 3%;
     width: 100%;
     position:fixed;
     top: 0;
     left: 0;
     background-color: white;
+    box-sizing: border-box;
 }
 .site_title{
     text-decoration: none;
-    font-size: calc((2 - 1) * 1.2vw + 1rem);
+    font-size: calc((2.2 - 1) * 1.2vw + 1rem);
+}
+i{
+    display: none;
 }
 nav{
     float:right;
@@ -37,7 +41,6 @@ nav ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
-    padding-right: 70px;
 }
 nav ul li{
     padding: 10px;
@@ -51,13 +54,12 @@ nav ul li a{
 #introduction_section{
     max-width: 100%;
     background-color: white;
-    padding: 70px 40px;
-    margin: 20px auto 0;
+    padding: 5% 3%;
+    margin: 2% auto 0;
 }
 #introduction_section h1{
     font-size: calc((4.2 - 1) * 1.2vw + 1rem);
     font-weight: lighter;
-    margin-bottom: 30px;
 }
 #introduction_section aside{
     font-size: calc((1.5 - 1) * 1.2vw + 1rem);
@@ -84,17 +86,16 @@ nav ul li a{
 .main_section{
     max-width: 70%;
     box-sizing: border-box;
-    margin: 150px auto 0;
+    margin: 16% auto 0;
 }
 .main_section h1{
     text-align: center;
     font-size: calc((4.2 - 1) * 1.2vw + 1rem);
-    margin: 50px 0;
 }
 .main_section article{
     max-width: 100%;
     display: inline-block;
-    margin: 40px 0;
+    margin: 7.5% 0;
 }
 .main_section article h2{
     font-size: calc((2.8 - 1) * 1.2vw + 1rem);
@@ -139,6 +140,11 @@ footer a{
 }
 
 @media screen and (max-width: 768px){
+    i{
+        display: inline;
+        float: right;
+        font-size: 2rem;
+    }
     nav{
         display: none;
     }
