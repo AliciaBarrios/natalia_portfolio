@@ -5,6 +5,7 @@ body{
     color: white;
     background-color: #8b706f;
 }
+/*BASICS*/
 .main_color{
     color:#c79288;
 }
@@ -14,10 +15,23 @@ body{
 .main_background_color{
     background-color: #8b706f;
 }
+.second_background_color{
+    background-color: white;
+}
 .text_decoration_underline{
     text-decoration-line: underline;
     text-underline-offset: 5px;
 }
+.bold_word{
+    font-weight: bolder;
+}
+.italic_word{
+    font-style: italic;
+}
+.text_align_center{
+    text-align: center;
+}
+/*MAIN STYLES*/
 header{
     padding: 1.5% 3%;
     width: 100%;
@@ -111,10 +125,6 @@ nav ul li a{
 .main_section article aside p{
     margin:0;
 }
-span{
-    text-decoration: underline;
-    color: #c79288;
-}
 footer{
     width: 100%;
     height: auto;
@@ -137,6 +147,40 @@ footer img{
 footer a{
     font-weight: lighter;
     font-size: 25px;
+}
+/**CASES STYLE**/
+.cases_main_section{
+    max-width: 70%;
+    box-sizing: border-box;
+    margin: 16% auto 0;
+}
+.cases_main_section h1{
+    text-align: center;
+    font-size: calc((6.2 - 1) * 1.2vw + 1rem);
+    font-weight: lighter;
+}
+.cases_main_section img{
+    width: 100%;
+    margin:auto;
+}
+.cases_main_section h2{
+    font-size: calc((2.2 - 1) * 1.2vw + 1rem);
+}
+.cases_main_section article p, p, a, ul{
+    font-size: calc((1.2 - 1) * 1.2vw + 1rem);
+    line-height: 30px;
+    text-align: justify;
+}
+.float_right{
+    display: flex;
+}
+.float_right img{
+    width: 50%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+h3{
+    font-size: calc((1.5 - 1) * 1.2vw + 1rem);
 }
 
 @media screen and (max-width: 768px){
