@@ -81,7 +81,7 @@ nav ul li a{
 .presentation_section{
     padding-top: 6.6vmax;
     padding-bottom: 6.6vmax;
-    max-width: 80%;
+    max-width: 100%;
     margin: auto;
     display: flex;
     justify-content: space-evenly;
@@ -96,6 +96,10 @@ nav ul li a{
     max-width: 40%;
     text-align: left;
     font-size: calc((1.5 - 1) * 1.2vw + 1rem);
+}
+.presentation_section p a{
+    font-size: calc((1.5 - 1) * 1.2vw + 1rem);
+    color:#c79288;
 }
 .main_section{
     max-width: 70%;
@@ -124,6 +128,19 @@ nav ul li a{
 }
 .main_section article aside p{
     margin:0;
+}
+.main_section article aside a{
+    font-weight: bolder;
+    background-color: rgb(199, 146, 136);
+    padding: 1.5%;
+    border-radius: 5%;
+    text-decoration: none;
+}
+.main_section article aside a:hover{
+    font-weight: bolder;
+    padding: 1.5%;
+    border-radius: 5%;
+    background-color: rgba(199, 146, 136, 0.5);
 }
 footer{
     width: 100%;
@@ -186,7 +203,7 @@ h3{
 @media screen and (max-width: 768px){
     i{
         display: inline;
-        float: right;
+        pointer-events: none;
         font-size: 2rem;
     }
     nav{
@@ -196,6 +213,9 @@ h3{
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    #introduction_section{
+        margin: 10% 0;
     }
     .presentation_section{
         flex-direction: column;
